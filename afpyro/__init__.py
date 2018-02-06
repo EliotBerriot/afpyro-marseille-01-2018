@@ -10,7 +10,7 @@ def get_place(edition=1):
         return 'Stade Vélodrome'
     if edition == 4:
         return 'Palais du Pharo'
-    raise ValueError('We don\'t know yet!')
+    raise ValueError("We don't know yet!")
 
 
 def write_program(event, file_path):
