@@ -2,7 +2,7 @@ import afpyro
 import pytest
 
 
-@pytest.mark.parametrize('edition,expected', [
+@pytest.mark.parametrize('edition, expected', [
     (1, 'La Boate'),
     (2, 'Zenith'),
     (3, 'Stade Vélodrome'),

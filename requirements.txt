@@ -1,2 +1,5 @@
 pytest
 ipython
+pytest-randomly
+pytest-xdist
+pytest-mock

@@ -12,6 +12,9 @@ class TestLog(unittest.TestCase):
         os.remove(self.program_file)
 
     def test_write_afpyro_program(self):
-        afpyro.write_program('Introduction to pytest', self.program_file)
+        event = 'Introduction to pytest'
+        afpyro.write_program(
+            event,
+            self.program_file)
         with open(self.program_file) as f:
-            self.assertEqual(f.read(), 'Introduction to pytest')
+            self.assertEqual(f.read(), event)

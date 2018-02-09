@@ -13,6 +13,7 @@ def program_file():
 
 
 def test_write_afpyro_program(program_file):
-    afpyro.write_program('Introduction to pytest', program_file)
+    event = 'Introduction to pytest'
+    afpyro.write_program(event, program_file)
     with open(program_file) as f:
-        assert f.read() == 'Introduction to pytest'
+        assert f.read() == event
